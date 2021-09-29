@@ -1,7 +1,15 @@
 import React from 'react';
+import Link from 'next/link';
 
-export default () => {
+const Pages = () => {
   return (
-    <h1>Index Page</h1>
+    <div>
+      <h1>Index Page</h1>
+      <Link href ='/notes'>
+        <a>Notes</a>
+      </Link>
+    </div>
   );
 };
+
+export default Pages;
