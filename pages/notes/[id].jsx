@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-export default () => {
+const Note = () => {
   const router = useRouter();
   const { id } = router.query;
 
@@ -9,3 +9,5 @@ export default () => {
     <h1>Note: {id}</h1>
   );
 };
+
+export default Note;
